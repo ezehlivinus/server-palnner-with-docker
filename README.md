@@ -5,7 +5,11 @@
 - clone
 - On the project directory run: 
   - In development mode: `docker-compose up --build dev`
-- Make a request to the server. Hint use the sample request as a guide.
+  - If error occurs for what ever reason, run:
+    - `docker-compose down` to stop and remove the containers or `docker container stop <this-container_id> && docker container rm <this-container_id>` to stop and remove the(this) container
+    - Then run: `docker-compose up --build dev` to start the containers
+
+- Make a request to the server. `Hint->` use the sample request as a guide.
 
 ### Heroku - Remote Server - Online
 - Use this `POST`: `https://app-server-planner.herokuapp.com/server-plans` instead of the localhost url specified on the sample request.
